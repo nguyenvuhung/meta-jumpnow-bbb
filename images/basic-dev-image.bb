@@ -4,7 +4,9 @@ HOMEPAGE = "http://www.jumpnowtek.com"
 IMAGE_FEATURES += "package-management"
 IMAGE_LINGUAS = "en-us"
 
-inherit image
+# inherit image
+# base image, change if required:
+require recipes-core/images/core-image-minimal.bb
 
 CORE_OS = " \
     openssh openssh-keygen openssh-sftp-server \
